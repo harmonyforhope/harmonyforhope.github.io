@@ -3,7 +3,7 @@
 <head>
 <title>H.O.P.E</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
   box-sizing: border-box;
@@ -20,11 +20,6 @@ body {
   text-align: center;
   background: #ddd;
   color: black;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
 }
 
 /* Style the top navigation bar */
@@ -101,6 +96,13 @@ img {
   }
 }
 
+@media screen and (min-width: 700px) {
+  .header {
+    img.responsive { width: 10%; }
+  }
+}
+img.responsive { height: auto; }
+
 .center {
   display: block;
   margin-left: auto;
@@ -111,7 +113,7 @@ img {
 <body>
 
 <div class="header">
-  <img src="https://i.imgur.com/txhb6t8.png" alt="Logo" height="200" width="800">
+  <img src="https://i.imgur.com/txhb6t8.png" alt="Logo" /*height="200" width="800"*/ style="max-width:100%;" class="responsive"/>
 </div>
 
 <div class="navbar">
@@ -122,7 +124,7 @@ img {
 
 <div class="row">
   <div class="side">
-    <img src="https://i.imgur.com/a0r3WDF.png" alt="Logo" height="420" width="420" class="center">
+    <img src="https://i.imgur.com/a0r3WDF.png" alt="Logo" /*height="420" width="420"*/ class="center" style="max-width:100%;">
   </div>
   <div class="main">
     <h2>Pianism has been considered a solitary discipline.</h2>
@@ -134,7 +136,7 @@ img {
 </div>
 
 <div class="footer">
-  <img src="https://i.imgur.com/FeVOxI9.png" alt="Logo" /*height="100" width="210"*/ class="center">
+  <img src="https://i.imgur.com/FeVOxI9.png" alt="Logo" /*height="100" width="210"*/ class="center" >
 </div>
 
 </body>
