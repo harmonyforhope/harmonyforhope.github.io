@@ -3,33 +3,36 @@
 <head>
 <title>H.O.P.E</title>
 <meta charset="UTF-8">
+/* For mobile responsiveness */
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
   box-sizing: border-box;
 }
 
-body {
+body
+{
   font-family: "Comic Sans MS", cursive, sans-serif;
   margin: 0;
 }
 
-/* Style the header */
-.header {
+.header
+{
   padding: 15px;
   text-align: center;
   background: #ddd;
   color: black;
 }
 
-/* Style the top navigation bar */
-.navbar {
+.navbar
+{
+  /* Prevent navbar from breaking in mobile */
   overflow: hidden;
   background-color: #333;
 }
 
-/* Style the navigation bar links */
-.navbar a {
+.navbar a
+{
   float: left;
   display: block;
   color: white;
@@ -38,76 +41,67 @@ body {
   text-decoration: none;
 }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
+.navbar a:hover
+{
   background-color: #ddd;
   color: black;
 }
 
-/* Column container */
-.row {  
+.row
+{  
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
+.side
+{
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
 }
 
-/* Main column */
-.main {   
+.main
+{   
   flex: 70%;
   background-color: white;
   padding: 20px;
 }
 
-img {
+img
+{
   display: inline-block;
 }
 
-/* Footer */
-.footer {
+.footer
+{
   padding: 20px;
   text-align: center;
   background: #ddd;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px)
+{
   .row {   
     flex-direction: column;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
+@media screen and (max-width: 400px)
+{
+  .navbar a
+  {
     float: none;
     width:100%;
   }
 }
 
-@media screen and (min-width: 700px) {
-  .header {
-    img.responsive { width: 10%; }
-  }
-}
-img.responsive { height: auto; }
-
-.center {
+.center
+{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 </style>
 </head>
 <body>
@@ -124,7 +118,7 @@ img.responsive { height: auto; }
 
 <div class="row">
   <div class="side">
-    <img src="https://i.imgur.com/a0r3WDF.png" alt="Logo" /*height="420" width="420"*/ class="center" style="max-width:100%;">
+    <img src="https://i.imgur.com/a0r3WDF.png" alt="topLogo" /*height="420" width="420"*/ class="center" style="max-width:100%;">
   </div>
   <div class="main">
     <h2>Pianism has been considered a solitary discipline.</h2>
@@ -136,7 +130,7 @@ img.responsive { height: auto; }
 </div>
 
 <div class="footer">
-  <img src="https://i.imgur.com/FeVOxI9.png" alt="Logo" /*height="100" width="210"*/ class="center" >
+  <img src="https://i.imgur.com/FeVOxI9.png" alt="bottomLogo" /*height="100" width="210"*/ class="center" >
 </div>
 
 </body>
