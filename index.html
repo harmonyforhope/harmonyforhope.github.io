@@ -59,6 +59,20 @@ h1, h2, h3, h4, h5, h6 {
 position: relative;
 }
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 </style>
 <body>
 <!-- Navbar -->
@@ -119,8 +133,10 @@ position: relative;
   <!-- video highlights -->
   <div class="w3-container w3-center w3-padding-64" id="videos">
     <h1> Check out our most recent projects! </h1>
-    <p class="w3-content">
-       <iframe width="480" height="320" src="https://www.youtube.com/embed/jIqBqecMTHo"> </iframe>
+    <p class="w3-container w3-center w3-content w3-padding-16">
+	  <div class="video-responsive">
+        <iframe width="480" height="320" src="https://www.youtube.com/embed/jIqBqecMTHo"> </iframe>
+	  </div>	
      </p>
   </div>
 
@@ -131,8 +147,8 @@ position: relative;
   <div class="w3-container w3-center w3-padding-64" id="joinUs">
     <h1>Join Us</h1>
     <p class="w3-content">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScy0ZrbZtwHBGNDgsX1ULjwZrhkOUmA27saH2ZQWCqD1MRz9Q/viewform" target="_blank" class="w3-bar-item w3-button"> Become a new member here! <br></a>
-    </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScy0ZrbZtwHBGNDgsX1ULjwZrhkOUmA27saH2ZQWCqD1MRz9Q/viewform" target="_blank" class="w3-bar-item w3-button"> Become a new member here! <br></a>
+	</p>
     <div>
       <p> Questions? Email us at harmonyforhope2020@gmail.com! </p>
     </div>
