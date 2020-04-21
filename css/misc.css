@@ -1,0 +1,28 @@
+.w3-top {
+position: relative;
+}
+
+.w3-button2 {
+  background-color: #FFFFFF;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.disableButton {
+  cursor:not-allowed;
+  opacity:0.3;
+  pointer-events:none;
+}
+
+.menuBold {
+  font-size: 15px;
+  letter-spacing: 6px;
+}
+
+button:focus { outline: none; }
