@@ -10,123 +10,21 @@
   
     gtag('config', 'UA-164104756-1');
   </script>
-</head>
+  
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="icon" href="Images/txhb6t8.png">
 <title>Harmonies of Pianists Everywhere</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/dropdown.css">
+<link rel="stylesheet" href="css/video.css">
+<link rel="stylesheet" href="css/misc.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
 <style>
-
-body {
-  font-family: monospace, cursive, sans-serif;
-  overflow: hidden;
-  padding-bottom:16px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: monospace, cursive, sans-serif;
-  letter-spacing: 5px;
-}
-
-/* Video */
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
-/* Dropdown */
-.dropdown {
-  float: right;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: white;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right=0;
-  background-color: #DCDCDC;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: right;
-}
-
-.dropdown-content a:hover {
-  background-color: #FFFFFF;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ffffff;color:#000}
-
-.w3-top {
-position: relative;
-}
-
-/* Collapsible */
-.collapsible {
-  background-color: #FFFFFF;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #DCDCDC;
-}
-
-.content {
-  padding: 0 0px;
-  max-height: 0;
-  overflow: hidden;
-  background-color: #f1f1f1;
-  transition: max-height 0.2s ease-out;
-}
-
-.w3-button2 {
-  background-color: #FFFFFF;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-button:focus { outline: none; }
-
 </style>
 <body>
 <!-- Navbar -->
@@ -136,7 +34,7 @@ button:focus { outline: none; }
 	<!-- Dropdown -->
     <div class="w3-right">
 	  <div class="w3-white w3-dropdown-click w3-right">
-		<button onclick="dropdown()" class="w3-padding-16 w3-button w3-hover-white">| |</button>
+		<button onclick="dropdown()" class="menuBold w3-padding-16 w3-button w3-hover-white">|||</button>
 		<div id="rightMenu" class="w3-dropdown-content w3-bar-block w3-border w3-card-4" style="right:0">
 		  <button class="collapsible">Social Media</button>
 		  <div class="content">
@@ -147,6 +45,7 @@ button:focus { outline: none; }
 		  </div>
 		 
 		  <a href="events.html" class="w3-button2 w3-button">Events</a>
+		  <a class="disableButton w3-button2 w3-button" href="team.html" >Hope Team (WIP)</a>
 		</div>
 	  </div>
   </div>
@@ -196,60 +95,14 @@ button:focus { outline: none; }
     <p class="w3-container w3-center w3-content w3-padding-16">
 	  <div class="w3-content w3-display-container video-responsive">
         <iframe class="videoSlides" width="480" height="320" src="https://www.youtube.com/embed/jIqBqecMTHo"> </iframe>
-		    <iframe class="videoSlides" width="480" height="320" src="https://www.youtube.com/embed/F4ikuOQTLxc"> </iframe>
-		    <button class="w3-btn w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-		    <button class="w3-btn w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		<iframe class="videoSlides" width="480" height="320" src="https://www.youtube.com/embed/F4ikuOQTLxc"> </iframe>
+		
+		<button class="w3-btn w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-btn w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 	  </div>	
-    </p>
+     </p>
     <p> Placeholder credits to Twoset Violin. Love you guys <3 </p>
   </div>
-  
-  <script>
-  <!-- Script for Video Showcase -->
-  var slideIndex = 1;
-  showDivs(slideIndex);
-
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("videoSlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-  
-  <!-- Script for Dropdown -->
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  }
-  
-  <!-- For Dropdown -->
-  function dropdown() {
-    var x = document.getElementById("rightMenu");
-    if (x.className.indexOf("w3-show") == -1) { 
-      x.className += " w3-show";
-    } else {
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  </script>
 
   <hr>
 
@@ -265,6 +118,9 @@ button:focus { outline: none; }
   </div>
   
 </div>
+
+<script type="text/javascript" src="js/video.js"></script> 
+<script type="text/javascript" src="js/dropdown.js"></script>
 
 <br><br>
 
