@@ -13,3 +13,8 @@ h2, h3, h4, h5, h6 {
   font-family: monospace, cursive, sans-serif;
   letter-spacing: 5px;
 }
+
+p {
+  font-family: 'Montserrat', cursive, sans-serif;
+  letter-spacing: 2px;
+}	
