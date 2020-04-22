@@ -64,3 +64,7 @@ L.marker([31.9686, -99.9018]).addTo(map)
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);				
 				
+$(window).on("resize", function() {
+    $("#map").height($(window).height()).width($(window).width());
+    map.invalidateSize();
+}).trigger("resize");				
