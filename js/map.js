@@ -269,7 +269,14 @@ L.marker([35.9077568, 127.766922]).addTo(map)
 	.bindPopup("<b>South Korea</b>" +
 				"<br>Ben Kim"			
 				,{'minWidth':'150', 'maxHeight':'200'}
-				);				
+				);
+
+/* China */
+L.marker([35.486703, 101.901875]).addTo(map)
+	.bindPopup("<b>China</b>" +
+				"<br>Freya Ou"			
+				,{'minWidth':'150', 'maxHeight':'200'}
+				);
 							
 $(window).on("resize", function() {
     $("#map").height($(window).height()).width($(window).width());
