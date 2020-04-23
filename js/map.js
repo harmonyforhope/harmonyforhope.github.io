@@ -130,7 +130,8 @@ L.marker([40.7127753, -74.0059728]).addTo(map)
 				"<br>Julia Kim" +
 				"<br>Lucas Amory" +
 				"<br>Matthew Chen" +
-				"<br>Riley Barker"
+				"<br>Riley Barker" +
+		   		"<br>Sara Chough"
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);	
 
