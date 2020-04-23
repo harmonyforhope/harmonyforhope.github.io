@@ -79,7 +79,8 @@ L.marker([31.9686, -99.9018]).addTo(map)
 	.bindPopup("<b>Texas</b>" +
 				"<br>Ami Kitajima" +
 				"<br>Dylan Liu" +
-				"<br>Esther Pham"				
+				"<br>Esther Pham" +
+		   		"<br>Laurel Engelhardt"
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);				
 				
