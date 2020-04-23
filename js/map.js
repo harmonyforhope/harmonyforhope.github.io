@@ -223,7 +223,8 @@ L.marker([47.7510741, -120.7401385]).addTo(map)
 				"<br>Deanna Han" +
 				"<br>Emily Jeeho Park" +
 				"<br>Jenna Tu" +
-				"<br>Quennie Nguyen"
+				"<br>Quennie Nguyen" +
+		   		"<br>Nicole Wang"
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);		
 
