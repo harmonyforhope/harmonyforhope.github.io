@@ -11,7 +11,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 	zoomOffset: -1
 }).addTo(map);
 
-/* California */
+/* CA */
 L.marker([36.987789, -119.7251616]).addTo(map)
 	.bindPopup("<b>California</b>" +	
 				"<br>Aaron Miller" +
@@ -74,13 +74,12 @@ L.marker([36.987789, -119.7251616]).addTo(map)
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);
 				
-/* Texas */
+/* TX */
 L.marker([31.9686, -99.9018]).addTo(map)
 	.bindPopup("<b>Texas</b>" +
 				"<br>Ami Kitajima" +
 				"<br>Dylan Liu" +
-				"<br>Esther Pham" +
-		   		"<br>Laurel Engelhardt"
+				"<br>Esther Pham"				
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);				
 				
@@ -111,7 +110,7 @@ L.marker([39.0457549, -76.6412712]).addTo(map)
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);	
 
-/* Missouri */
+/* MO */
 L.marker([37.9642529, -91.8318334]).addTo(map)
 	.bindPopup("<b>Missouri</b>" +
 				"<br>Alex Chen" +
@@ -130,8 +129,7 @@ L.marker([40.7127753, -74.0059728]).addTo(map)
 				"<br>Julia Kim" +
 				"<br>Lucas Amory" +
 				"<br>Matthew Chen" +
-				"<br>Riley Barker" +
-		   		"<br>Sara Chough"
+				"<br>Riley Barker"
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);	
 
@@ -224,8 +222,7 @@ L.marker([47.7510741, -120.7401385]).addTo(map)
 				"<br>Deanna Han" +
 				"<br>Emily Jeeho Park" +
 				"<br>Jenna Tu" +
-				"<br>Quennie Nguyen" +
-		   		"<br>Nicole Wang"
+				"<br>Quennie Nguyen"
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);		
 
@@ -237,7 +234,7 @@ L.marker([34.0489281, -111.0937311]).addTo(map)
 				,{'minWidth':'150', 'maxHeight':'200'}
 				);
 
-/* Ohio */
+/* OH */
 L.marker([40.4172871, -82.907123]).addTo(map)
 	.bindPopup("<b>Ohio</b>" +
 				"<br>Kasey Shao" +
@@ -272,14 +269,7 @@ L.marker([35.9077568, 127.766922]).addTo(map)
 	.bindPopup("<b>South Korea</b>" +
 				"<br>Ben Kim"			
 				,{'minWidth':'150', 'maxHeight':'200'}
-				);
-
-/* China */
-L.marker([35.486703, 101.901875]).addTo(map)
-	.bindPopup("<b>China</b>" +
-				"<br>Freya Ou"			
-				,{'minWidth':'150', 'maxHeight':'200'}
-				);
+				);				
 							
 $(window).on("resize", function() {
     $("#map").height($(window).height()).width($(window).width());
