@@ -21,6 +21,7 @@ L.marker([36.987789, -119.7251616]).addTo(map)
 				"<br>Andrew Yin" +
 				"<br>Andrew Zhao" +
 				"<br>Angela Tsang" +
+		   		"<br>April Lee" +
 				"<br>Ben Hoang" +
 				"<br>Catherine Huang" +
 				"<br>Charlotte Wong" +
