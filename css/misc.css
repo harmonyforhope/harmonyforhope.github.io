@@ -38,3 +38,5 @@ position: relative;
 }
 
 button:focus { outline: none; }
+
+div.w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center;opacity: 0.6;}
