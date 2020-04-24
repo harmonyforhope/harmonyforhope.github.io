@@ -7,10 +7,10 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
+
     gtag('config', 'UA-164104756-1');
   </script>
-  
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="icon" href="Images/txhb6t8.png">
 <title>Harmonies of Pianists Everywhere</title>
@@ -21,7 +21,6 @@
 <link rel="stylesheet" href="css/video.css">
 <link rel="stylesheet" href="css/misc.css">
 <link rel="stylesheet" href="css/style.css">
-
 
 </head>
 <style>
@@ -36,6 +35,15 @@
 	  <div class="w3-white w3-dropdown-click w3-right">
 		<button onclick="dropdown()" class="menuBold w3-padding-16 w3-button w3-hover-white">|||</button>
 		<div id="rightMenu" class="w3-dropdown-content w3-bar-block w3-border w3-card-4" style="width: 10%; right:0">
+
+      <button class="collapsible">Discover</button>
+		  <div class="content">
+        <a href="news.html" class="w3-bar-item w3-button">News</a>
+		    <a href="events.html" class="w3-bar-item w3-button">Events</a>
+        <a href="episodes.html" class="w3-bar-item w3-button">Episodes</a>
+        <a href="team.html" class="w3-bar-item w3-button" >Hope Team</a>
+		  </div>
+
 		  <button class="collapsible">Social Media</button>
 		  <div class="content">
 		    <a href="https://www.facebook.com/harmonyforhope2020/" target="_blank" class="w3-bar-item w3-button">Facebook</a>
@@ -43,24 +51,33 @@
 		    <a href="https://www.youtube.com/channel/UC-3WBS1_l62ttDnySzowL_w" target="_blank" class="w3-bar-item w3-button">Youtube</a>
 		    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="w3-bar-item w3-button">Twitter</a>
 		  </div>
-		 
-		  <a href="events.html" class="w3-button2 w3-button">Events</a>
-		  <a href="episodes.html" class="w3-button2 w3-button">Episodes</a>
-		  <a class="w3-button2 w3-button" href="team.html" >Hope Team</a>
+
 		</div>
 	  </div>
   </div>
 </div>
 
-<br><br>
+<!-- VIDEO CONTAINER -->
+<div class="w3-display-container">
+  <div class="video">
+    <video autoplay loop muted inline style="width:100%">
+      <source src="videos/slides.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="w3-display-middle w3-center w3-padding-large w3-hide-small">
+    <div class="w3-tag">
+      <h1>Welcome to H.O.P.E</h1>
+      <a href="news.html" class="button"><p>View our News</p></a>
+    </div>
+  </div>
+</div>
 
 <!-- Info -->
-<div class="w3-content" style="max-width:1100px">
-
+<div class="w3-content w3-section" style="max-width:1100px">
   <!-- About Us -->
   <div class="w3-row w3-padding-64" id="about">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="Images/a0r3WDF.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="640" height="640">
+     <img src="Images/a0r3WDF.png" class="w3-round w3-image w3-opacity-min" width="640" height="640">
     </div>
 
     <div class="w3-col m6 w3-padding-large">
@@ -70,9 +87,9 @@
 	  <h5 class="w3-center"> Amidst difficult times, we hope our community of musicians can spread joy to yours.</h5>
     </div>
   </div>
-  
+
   <hr>
-  
+
   <!-- What We Do -->
   <div class="w3-row w3-padding-64" id="what_we_do">
     <div class="w3-col m6 w3-padding-large">
@@ -80,15 +97,15 @@
       <h5 class="w3-center">We give pianists <br> opportunities to participate <br> in collaborative videos <br>
 	  —in which each person <br> records a few measures <br> of a well-known, <br> soothing work, <br> and we combine <br> these excerpts <br> into one coherent <br> video to post to our <br> website, Youtube, Facebook, and Instagram.</h5>
     </div>
-	
+
     <div class="w3-col m6 w3-padding-large w3-hide-small">
      <img src="Images/clef.png" class="w3-round w3-image w3-opacity-min" alt="Logo" width="300" height="300">
     </div>
-	
-    
+
+
   </div>
-  
-  <hr> 
+
+  <hr>
 
   <!-- video highlights -->
   <div class="w3-container w3-center w3-padding-64" id="videos">
@@ -97,10 +114,10 @@
 	  <div class="w3-content w3-display-container video-responsive">
         <iframe allowfullscreen="allowfullscreen" class="videoSlides" width="480" height="320" src="https://www.youtube.com/embed/jIqBqecMTHo"> </iframe>
 		<iframe allowfullscreen="allowfullscreen" class="videoSlides" width="480" height="320" src="https://www.youtube.com/embed/F4ikuOQTLxc"> </iframe>
-		
+
 		<button class="w3-btn w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 		<button class="w3-btn w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-	  </div>	
+	  </div>
      </p>
     <p> Placeholder credits to Twoset Violin. Love you guys <3 </p>
   </div>
@@ -118,10 +135,10 @@
       <p> Questions? Email us at <a href="mailto:harmonyforhope2020@gmail.com">harmonyforhope2020@gmail.com</a>!</p>
     </div>
   </div>
-  
+
 </div>
 
-<script type="text/javascript" src="js/video.js"></script> 
+<script type="text/javascript" src="js/video.js"></script>
 <script type="text/javascript" src="js/dropdown.js"></script>
 
 <br><br>
