@@ -22,7 +22,7 @@ function nameToLocation(name, location)
 {
 	var exist = false; var count = 0;
 	var keys = Object.keys(loc);
-	console.log(name, location, loc, keys);
+	//console.log(name, location, loc, keys);
 	for (var x=0; x<keys.length+1; x++)
 	{
 		if (location == keys[x]) { exist = true; }
