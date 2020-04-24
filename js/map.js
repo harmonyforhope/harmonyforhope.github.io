@@ -13,8 +13,6 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(map);
 
 //VARS
-var names = [];
-var locations = [];
 var loc = {};
 
 //ADDS NAMES TO STATE/COUNTRY STRING (AUTO)
@@ -41,8 +39,6 @@ base('Members').select({
 }).eachPage(function page(records, fetchNextPage) {
 	//Fill arrays with data from spreadsheet
   records.forEach(function(record) {
-		names.push(record.get('parsedName'));
-		locations.push(record.get('parsedLocation'));
 		nameToLocation(record.get('parsedName'), record.get('parsedLocation'));
   });
 
