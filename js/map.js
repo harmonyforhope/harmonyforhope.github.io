@@ -60,6 +60,7 @@ base('Members').select({
 	L.marker([33.836081, -81.1637245]).addTo(map).bindPopup("<b>South Carolina</b>"+loc.SC, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([46.729553, -94.6858998]).addTo(map).bindPopup("<b>Minnesota</b>"+loc.MN, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([42.4072107, -71.3824374]).addTo(map).bindPopup("<b>Massachusetts</b>"+loc.MA, {'minWidth':'150', 'maxHeight':'200'});
+	L.marker([32.523309, -89.710361]).addTo(map).bindPopup("<b>Mississippi</b>"+loc.MS, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([47.7510741, -120.7401385]).addTo(map).bindPopup("<b>Washington</b>"+loc.WA, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([34.0489281, -111.0937311]).addTo(map).bindPopup("<b>Arizona</b>"+loc.AZ, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([40.4172871, -82.907123]).addTo(map).bindPopup("<b>Ohio</b>"+loc.OH, {'minWidth':'150', 'maxHeight':'200'});
