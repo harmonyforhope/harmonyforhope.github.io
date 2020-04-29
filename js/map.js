@@ -71,7 +71,7 @@ base('Members').select({
 	L.marker([35.9077568, 127.766922]).addTo(map).bindPopup("<b>South Korea</b>"+loc["South Korea"], {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([35.486703, 101.901875]).addTo(map).bindPopup("<b>China</b>"+loc.China, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([41.294856, -4.055685]).addTo(map).bindPopup("<b>Spain</b>"+loc.Spain, {'minWidth':'150', 'maxHeight':'200'});
-	L.marker([4.1156735, -72.9301367]).addTo(map).bindPopup("<b>Spain</b>"+loc.Colombia, {'minWidth':'150', 'maxHeight':'200'});
+	L.marker([4.1156735, -72.9301367]).addTo(map).bindPopup("<b>Colombia</b>"+loc.Colombia, {'minWidth':'150', 'maxHeight':'200'});
 
   fetchNextPage();
 
