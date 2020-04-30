@@ -49,6 +49,7 @@ base('Members').select({
 	L.marker([41.2033216,  -77.1945247]).addTo(map).bindPopup("<b>Pennsylvania</b>"+loc.PA, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([39.0457549, -76.6412712]).addTo(map).bindPopup("<b>Maryland</b>"+loc.MD, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([37.9642529, -91.8318334]).addTo(map).bindPopup("<b>Missouri</b>"+loc.MO, {'minWidth':'150', 'maxHeight':'200'});
+	L.marker([39.113014, -105.358887]).addTo(map).bindPopup("<b>Colorado</b>"+loc.CO, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([40.7127753, -74.0059728]).addTo(map).bindPopup("<b>New York</b>"+loc.NY, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([40.0583238, -74.4056612]).addTo(map).bindPopup("<b>New Jersey</b>"+loc.NJ, {'minWidth':'150', 'maxHeight':'200'});
 	L.marker([32.1656221, -82.9000751]).addTo(map).bindPopup("<b>Georgia</b>"+loc.GA, {'minWidth':'150', 'maxHeight':'200'});
