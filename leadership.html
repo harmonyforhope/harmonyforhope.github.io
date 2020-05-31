@@ -101,48 +101,77 @@
   display: table;
   clear: both;
 }
+
+#last {
+  padding-bottom:300px;
+}
+
+@media only screen and (max-width: 800px) {
+  .text {
+    display: none;
+  }
+  .role {
+    padding-bottom: 8px;
+  }
+  .column {
+    width: 50%;
+  }
+  .row:after {
+    display: block;
+    clear: none;
+  }
+  .image {
+    height: 200px;
+  }
+  .column {
+    margin-bottom: 300px;
+  }
+  #last {
+    padding-bottom:25px;
+  }
+}
 </style>
 
 <body>
-    <!-- Navbar -->
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-            <a href="https://hopepiano.org"> <img src="Images/mainText.png" alt="Logo" /*height="50" width="200" */
-                    style="max-width:100%;" class="responsive" /> </a>
-            <!-- Dropdown -->
-            <div class="w3-right">
-                <div class="w3-white w3-dropdown-click w3-right">
-                    <button onclick="dropdown()" class="menuBold w3-padding-16 w3-button w3-hover-white">|||</button>
-                    <div id="rightMenu" class="w3-dropdown-content w3-bar-block w3-border w3-card-4"
-                        style="width: 10%; right:0">
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+        <a href="https://hopepiano.org"> <img src="Images/mainText.png" alt="Logo" /*height="50" width="200" */
+                style="max-width:100%;" class="responsive" /> </a>
+        <!-- Dropdown -->
+        <div class="w3-right">
+            <div class="w3-white w3-dropdown-click w3-right">
+                <button onclick="dropdown()" class="menuBold w3-padding-16 w3-button w3-hover-white">|||</button>
+                <div id="rightMenu" class="w3-dropdown-content w3-bar-block w3-border w3-card-4"
+                    style="width: 10%; right:0">
 
-                        <button class="collapsible">Discover</button>
-                        <div class="content">
-                            <a href="news" class="w3-bar-item w3-button">News</a>
-                            <a href="events" class="w3-bar-item w3-button">Events</a>
-                            <a href="episodes" class="w3-bar-item w3-button">Episodes</a>
-                            <a href="team" class="w3-bar-item w3-button">Hope Team</a>
-                            <a href="blog.php" class="w3-bar-item w3-button">Blog</a>
-                            <a href="leadership" class="w3-bar-item w3-button">Leadership</a>
-                        </div>
-
-                        <button class="collapsible">Social Media</button>
-                        <div class="content">
-                            <a href="https://www.facebook.com/harmonyforhope2020/" target="_blank"
-                                class="w3-bar-item w3-button">Facebook</a>
-                            <a href="https://www.instagram.com/harmonyforhope/" target="_blank"
-                                class="w3-bar-item w3-button">Instagram</a>
-                            <a href="https://www.youtube.com/channel/UC-3WBS1_l62ttDnySzowL_w" target="_blank"
-                                class="w3-bar-item w3-button">Youtube</a>
-                        </div>
-
+                    <button class="collapsible">Discover</button>
+                    <div class="content">
+                        <a href="news" class="w3-bar-item w3-button">News</a>
+                        <a href="events" class="w3-bar-item w3-button">Events</a>
+                        <a href="episodes" class="w3-bar-item w3-button">Episodes</a>
+                        <a href="team" class="w3-bar-item w3-button">Hope Team</a>
+                        <a href="blog.php" class="w3-bar-item w3-button">Blog</a>
+                        <a href="leadership" class="w3-bar-item w3-button">Leadership</a>
                     </div>
+
+                    <button class="collapsible">Social Media</button>
+                    <div class="content">
+                        <a href="https://www.facebook.com/harmonyforhope2020/" target="_blank"
+                            class="w3-bar-item w3-button">Facebook</a>
+                        <a href="https://www.instagram.com/harmonyforhope/" target="_blank"
+                            class="w3-bar-item w3-button">Instagram</a>
+                        <a href="https://www.youtube.com/channel/UC-3WBS1_l62ttDnySzowL_w" target="_blank"
+                            class="w3-bar-item w3-button">Youtube</a>
+                    </div>
+
                 </div>
             </div>
         </div>
+    </div>
 
-        <br><br>
-
+    <br><br>
+</div>
 <!-- Info -->
 <div class="w3-center w3-content" style="max-width:1100px">
 
@@ -412,7 +441,7 @@
             </div>
         </div>
 
-        <div class="column" style="padding-bottom:300px">
+        <div class="column" id="last">
             <div class="container w3-left" style="block-size:50px">
                 <img src="Images/DSC_0002.JPG" alt="Person1" class="image">
                 <div class="middle">
