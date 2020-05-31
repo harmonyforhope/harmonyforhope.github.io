@@ -26,10 +26,11 @@
 .image {
   opacity: 1;
   vertical-align: middle;
-  width: 94%;
-  height: auto;
+  width: 100%;
+  height: 350px;
   transition: .5s ease;
   backface-visibility: hidden;
+  object-fit: cover;
 }
 
 .middle {
@@ -41,6 +42,10 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.container {
+  margin-left: 3%; margin-right: 3%;
 }
 
 .container:hover .image {
@@ -126,20 +131,22 @@
   <!-- Row 1 -->
   <div class="row">
       <div class="column">
-          <div class="container w3-left">
-              <img src="Images/DSC_0002.JPG" alt="Person1" class="image">
+          <div class="container w3-left" style="block-size:200px">
+              <img src="Images/benH.JPG" alt="Person1" class="image">
               <div class="middle">
-                  <div class="text">Andy Dai, from Chapel Hill, NC, is a dual-enrolled rising senior at ECHHS and NCSSM. He studies piano with Teddy Robie
-                  and loves improvising (while procrastinating on practice). Aside from piano, Andy is also very passionate about STEM,
-                  tackling projects ranging from mosquitoes to AI. He is extremely excited to virtually conduct cancer combination therapy
-                  research from home this summer of 2020.</div>
+                  <div class="text">Ben Hoang, from Cupertino, California, is a homeschooled rising senior and studies piano with Jed Galant and Olya Katsman.
+                    Before moving to California in 2019, Ben attended high school in Austin, Texas, and was a member of the Austin Youth Music Ambassadors
+                    and the instrumental choir at St. Vincent de Paul Catholic Church. Ben is also a From The Top alumni and participated in their
+                    Arts Leadership program. Besides piano, Ben is very interested in STEM, especially computer programming,
+                    and has been developing websites and various applications. Currently, he is working on a project enabling automatic audio and video synchronization.
+                    Ben also enjoys playing tennis, biking, and sightseeing.</div>
               </div>
           </div>
       </div>
 
       <div class="column">
           <div class="container w3-left">
-              <img src="Images/DSC_0002.JPG" alt="Person1" class="image">
+              <img src="Images/andy.JPG" alt="Person1" class="image">
               <div class="middle">
                   <div class="text">Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello
                   World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello
@@ -381,7 +388,7 @@
                         passionate about STEM,
                         tackling projects ranging from mosquitoes to AI. He is extremely excited to virtually conduct cancer
                         combination therapy
-                        research from home this summer of 2020.</div>
+                        research from home this summer of 2020.</div>z
                 </div>
             </div>
         </div>
