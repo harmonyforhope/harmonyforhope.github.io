@@ -12,6 +12,7 @@
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/57e5dc2cb4.js" crossorigin="anonymous"></script>
 <link rel="icon" href="Images/mainText.png">
 <title>Harmonies of Pianists Everywhere</title>
 <meta charset="UTF-8">
@@ -135,61 +136,57 @@
 <body>
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <div class="w3-bar w3-white w3-padding w3-card w3" style="letter-spacing:4px;">
         <a href="https://hopepiano.org"> <img src="Images/mainText.png" alt="Logo" /*height="50" width="200" */
                 style="max-width:100%;" class="responsive" /> </a>
-        <!-- Dropdown -->
-        <div class="w3-right">
+
+        <!-- Desktop Navbar -->
+        <div class="desktopNavbar navbar w3-right">
+          <a href="news" class="w3-bar-item">News</a>
+          <a href="episodes" class="w3-bar-item">Episodes</a>
+          <a href="events" class="w3-bar-item">Events</a>
+          <a href="team" class="w3-bar-item">Members</a>
+          <a href="leadership" class="w3-bar-item">Leadership</a>
+          <a href="blog.php" class="w3-bar-item">Blog</a>
+        </div>
+        <!-- //Desktop Navbar -->
+
+        <!-- Mobile Dropdown -->
+        <div class="mobileDropdown w3-right">
             <div class="w3-white w3-dropdown-click w3-right">
                 <button onclick="dropdown()" class="menuBold w3-padding-16 w3-button w3-hover-white">|||</button>
                 <div id="rightMenu" class="w3-dropdown-content w3-bar-block w3-border w3-card-4"
                     style="width: 10%; right:0">
 
-                    <button class="collapsible">Discover</button>
-                    <div class="content">
-                        <a href="news" class="w3-bar-item w3-button">News</a>
-                        <a href="events" class="w3-bar-item w3-button">Events</a>
-                        <a href="episodes" class="w3-bar-item w3-button">Episodes</a>
-                        <a href="team" class="w3-bar-item w3-button">Hope Team</a>
-                        <a href="blog.php" class="w3-bar-item w3-button">Blog</a>
-                        <a href="leadership" class="w3-bar-item w3-button">Leadership</a>
-                    </div>
-
-                    <button class="collapsible">Social Media</button>
-                    <div class="content">
-                        <a href="https://www.facebook.com/harmonyforhope2020/" target="_blank"
-                            class="w3-bar-item w3-button">Facebook</a>
-                        <a href="https://www.instagram.com/harmonyforhope/" target="_blank"
-                            class="w3-bar-item w3-button">Instagram</a>
-                        <a href="https://www.youtube.com/channel/UC-3WBS1_l62ttDnySzowL_w" target="_blank"
-                            class="w3-bar-item w3-button">Youtube</a>
-                    </div>
+                  <div>
+                      <a href="news" class="w3-bar-item w3-button">News</a>
+                      <a href="episodes" class="w3-bar-item w3-button">Episodes</a>
+                      <a href="events" class="w3-bar-item w3-button">Events</a>
+                      <a href="team" class="w3-bar-item w3-button">Members</a>
+                      <a href="leadership" class="w3-bar-item w3-button">Leadership</a>
+                      <a href="blog.php" class="w3-bar-item w3-button">Blog</a>
+                  </div>
 
                 </div>
             </div>
         </div>
+        <!-- //Mobile Dropdown -->
     </div>
-
-    <br><br>
 </div>
 <!-- Info -->
-<div class="w3-center w3-content" style="max-width:1100px">
+<div class="w3-center w3-content w3-padding-64" style="max-width:1100px">
 
   <!-- Leadership -->
   <div class="w3-row w3-padding-16" id="leadership">
-      <div class="w3-container w3-center w3-padding-64">
+      <div class="w3-container w3-center">
           <h1 class="w3-center">Leadership</h1> <hr>
       </div>
-
-
-
-
 
   <!-- Row 1 -->
   <div class="row">
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/catherine.jpg" alt="Person1" class="image" style="border-radius:50%">
+              <img src="Images/leadership/catherine.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                   <div class="name">
                     Catherine Huang
@@ -208,7 +205,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/benjamin.jpg" alt="Person1" class="image" style="border-radius:50%">
+              <img src="Images/leadership/benjamin.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                   <div class="name">
                     Benjamin T. Rossen
@@ -228,7 +225,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/josie.jpg" alt="Person1" class="image" style="border-radius:50%">
+              <img src="Images/leadership/josie.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Josephine Chou
@@ -250,7 +247,7 @@
   <div class="row">
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/simon.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/simon.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Simon Tao
@@ -269,7 +266,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/DSC_0002.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/lucas.PNG" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Lucas Amory
@@ -277,19 +274,17 @@
                 <div class="role">
                   Senior Vice President
                 </div>
-                  <div class="text">Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello
-                      World!Hello World!Hello World!Hello
-                      World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello
-                      World!Hello World!Hello
-                      World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello
-                      World!Hello World!</div>
+                  <div class="text">Lucas Amory is an incoming freshman at the New England Conservatory of Music, studying with Hae-Sun Paik and Princeton University Class of 2025 from New York City.
+                    Previously, he was enrolled in the Juilliard School’s Pre-College program, studying with Professor Julian Martin.
+                    He likes avocados and Avatar the Last Airbender. He dabbles in composing and conducting apart from piano and has a passion for musical community service initiatives.
+                    He hopes to bring a more accessible approach to the H.O.P.E. project, whether it be through interviews, vlogs, or educational crash courses on music and pianism.</div>
               </div>
           </div>
       </div>
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/benK.PNG" alt="Person1" class="image">
+              <img src="Images/leadership/benK.PNG" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Ben Kim
@@ -312,7 +307,7 @@
   <div class="row">
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/alex.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/alex.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Alex Chen
@@ -331,7 +326,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/hannah.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/hannah.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Hannah Lin
@@ -350,7 +345,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/erin.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/erin.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Erin Yuan
@@ -371,7 +366,7 @@
   <div class="row">
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/vanessa.png" alt="Person1" class="image">
+              <img src="Images/leadership/vanessa.png" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Vanessa Yu
@@ -392,7 +387,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/karina.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/karina.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Karina Tseng
@@ -410,7 +405,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/kevin.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/kevin.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Kevin Yang
@@ -430,7 +425,7 @@
   <div class="row">
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/soda.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/soda.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Soda Hou
@@ -451,7 +446,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/elizabeth.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/elizabeth.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Elizabeth Qiu
@@ -470,7 +465,7 @@
 
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/ophir.PNG" alt="Person1" class="image">
+              <img src="Images/leadership/ophir.PNG" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Ophir Horovitz
@@ -491,7 +486,7 @@
     <div class="row">
       <div class="column">
           <div class="container w3-left" style="block-size:50px">
-              <img src="Images/benH.jpg" alt="Person1" class="image">
+              <img src="Images/leadership/benH.jpg" alt="Person1" class="image" style="border-radius:50%">
               <div class="middle">
                 <div class="name">
                   Ben Hoang
@@ -511,7 +506,7 @@
 
         <div class="column">
             <div class="container w3-left" style="block-size:50px">
-                <img src="Images/andy.jpg" alt="Person1" class="image">
+                <img src="Images/leadership/andy.jpg" alt="Person1" class="image" style="border-radius:50%">
                 <div class="middle">
                   <div class="name">
                     Andy Dai
@@ -532,7 +527,7 @@
 
         <div class="column" id="last">
             <div class="container w3-left" style="block-size:50px">
-                <img src="Images/charlotte.jpg" alt="Person1" class="image">
+                <img src="Images/leadership/charlotte.jpg" alt="Person1" class="image" style="border-radius:50%">
                 <div class="middle">
                   <div class="name">
                     Charlotte Wong
@@ -560,7 +555,9 @@
 
 <!-- Footer -->
 <div class="w3-bottom w3-center w3-bar w3-white w3-card w3-padding-16">
-  <img src="Images/bottomText.png" alt="bottomLogo" class="center" /*height="50" width="105"*/  >
+    <a href="https://www.facebook.com/harmonyforhope2020/" target="_blank" class="buttons" title="Join us on Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/harmonyforhope/" target="_blank" class="buttons" title="Join us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.youtube.com/channel/UCwMuDy0uLNFAf6Bo_vpD5DA" target="_blank" class="buttons" title="Watch us on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
 </div>
 
 </body>
