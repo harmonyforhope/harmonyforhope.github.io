@@ -2,6 +2,8 @@
 
 ## Website for our organization
 
+### This repo only stores the frontend code. Backend code is not available on this repo.
+
 ### Important! : using w3.css, leaflet.js, AirTable API
 
 < link rel="stylesheet" href=" https://www.w3schools.com/w3css/4/w3.css ">
