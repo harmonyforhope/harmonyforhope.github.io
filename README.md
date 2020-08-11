@@ -2,7 +2,7 @@
 
 ## Website for our organization
 
-### This repo only stores the frontend code. Backend code is not available on this repo.
+### *This repo only stores the frontend code. Backend code is not available on this repo.*
 
 ### Important! : using w3.css, leaflet.js, AirTable API
 
